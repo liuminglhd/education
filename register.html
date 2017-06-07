@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /* 设置背景图片 */
+        	body{
+        		background: url(images/background.jpg) no-repeat;
+                background-size: cover;
+                background-attachment: scroll;
+        		font-size: 12px;
+        		font-family: "微软雅黑";
+        	}
+            /* 这是整个块 */
+			.container{
+				width: 100%;
+				height: 600px;
+                font-size: 16px;
+				margin:210px auto;
+				padding:0;
+			}
+			.container .user_pic{
+				width:400px;
+				height:140px; 
+				margin: 0 auto;
+				text-align: center;
+			}
+			.container .user_pic .photo{
+				border: 3px solid white;
+				border-radius: 50%;
+			}
+			.container .user_way{
+				width: 400px;
+				height: 40px;
+				margin:0 auto;
+			}
+			.container .user_way div{
+				width: 50%;
+				float: left;
+				border: 0;
+				text-align: center;
+				color: white;
+				font-size:20px;
+				background: gray;
+				line-height: 45px;
+			}
+            .container .user_way div:hover{
+                color:black;
+                background: white; 
+            }
+			.container .u_info{
+				background: white;
+			}
+            .container .user_info div{
+                width:400px;
+                height:36px;
+                margin: 15px auto;
+            }
+			.container .user_info .user_name{
+				background: url(images/user.jpg) no-repeat left center;
+				background-size: 36px;
+			}
+			.container .user_info input[name=uname]{
+				width: 364px;
+				height: 34px;
+				border: 0;
+				margin-left:36px;
+			}
+            .container .user_info .user_email{
+                background: url(images/email.jpg) no-repeat left center;
+                background-size: 36px;
+            }
+            .container .user_info .user_email input[name=uemail]{
+                width: 364px;
+                height: 34px;
+                border: 0;
+                margin-left:36px;
+            }
+
+            .container .user_info .user_pw{
+                background: url(images/pwd.jpg) no-repeat left center;
+                background-size: 36px;
+            }
+            .container .user_info .user_pw input[name=upw]{
+                width: 364px;
+                height: 34px;
+                border: 0;
+                margin-left:36px;
+            }
+            .container .user_info .user_sex input[name=usex]{
+                margin-left:60px;
+                margin-top:14px;
+            }
+            .container .user_info .user_addr{
+                background: url(images/position.png) no-repeat left center;
+                background-size: 36px;
+            }
+            .container .user_info .user_addr select[name=province]{
+                width: 170px;
+                height: 36px;
+                margin-left:36px;
+            }
+            .container .user_info .user_addr select[name=city]{
+                width: 189px;
+                height: 36px;
+                margin-right:0;
+            }
+            .container .user_info .user_agree input[name=agree]{
+                
+                margin: 10px auto;
+            }
+            span{
+                font-size: 14px;
+                color: white;
+            }
+            .container .user_info .user_reg input[name=reg]{
+                width:400px;
+                height: 36px;
+                background: #29D729;
+            }
+        </style>
+    </head>
+    <body>
+    	<div class="container">
+    		<!-- 注册头像 -->
+    		<div class="user_pic">
+    			<img class="photo" src="images/touxiang.jpg" alt="威锋">
+    		</div>
+    		<!-- 注册方式 -->
+    		<div class="user_way">
+    			<div class="user_common">
+    				普通注册
+    			</div>
+    			<div class="user_phone">
+    				手机注册
+    			</div>
+    		</div>
+    		<div class="user_info">
+    			<!-- 注册用户名 -->
+    			<div class="u_info user_name">
+    				<input type="text" name="uname" placeholder="用户名">
+    			</div>
+    			<!-- 注册邮箱 -->
+    			<div class="u_info user_email">
+    				<input type="text" name="uemail" placeholder="Email">
+    			</div>
+    			<!-- 注册密码 -->
+    			<div class="u_info user_pw">
+    				<input type="password" name="upw" placeholder="password">
+    			</div>
+    			<!-- 注册用户性别 -->
+    			<div class="u_info user_sex">
+    				<input type="radio" name="usex" value="female">女
+    				<input type="radio" name="usex" value="male">男
+    				<input type="radio" name="usex" value="secret">保密
+    			</div>
+    			<!-- 注册用户地址 -->
+    			<div class="u_info user_addr">
+    				<select name="province">
+    					<option value="0" selected>江苏省</option>
+    					<option value="1">浙江省</option>
+    					<option value="2">安徽省</option>
+    				</select>
+    				<select name="city">
+    					<option value="0" selected>南京市</option>
+    					<option value="1">无锡市</option>
+    					<option value="2">常州市</option>
+    				</select>
+    			</div>
+    			<!-- 注册协议 -->
+    			<div class="user_agree">
+    				<input type="radio" name="agree">
+    				<span>我已阅读并同意《用户协议》</span>
+    			</div>
+    			<!-- 注册信息提交 -->
+    			<div class="user_reg">
+    				<input type="submit" name="reg" value="注册">
+    			</div>
+    		</div>
+    	</div>
+    </body>
+</html>

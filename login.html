@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /* 设置背景图片 */
+        	body{
+        		background: url(images/background.jpg) no-repeat;
+                background-size: cover;
+                background-attachment: scroll;
+        		font-size: 12px;
+        		font-family: "微软雅黑";
+        	}
+            /* 这是整个块 */
+			.container{
+				width: 100%;
+				height: 600px;
+                font-size: 16px;
+				margin:210px auto;
+				padding:0;
+			}
+			.container .user_pic{
+				width:400px;
+				height:140px; 
+				margin: 0 auto;
+				text-align: center;
+			}
+			.container .user_pic .photo{
+				border: 3px solid white;
+				border-radius: 50%;
+			}
+			.container .user_way{
+				width: 400px;
+				height: 40px;
+				margin:0 auto;
+			}
+			.container .user_way div{
+				width: 50%;
+				float: left;
+				border: 0;
+				text-align: center;
+				color: white;
+				font-size:20px;
+				background: gray;
+				line-height: 45px;
+			}
+            .container .user_way div:hover{
+                color:black;
+                background: white; 
+            }
+			.container .u_info{
+				background: white;
+			}
+            .container .user_info div{
+                width:400px;
+                height:36px;
+                margin: 15px auto;
+            }
+			.container .user_info .user_name{
+				background: url(images/user.jpg) no-repeat left center;
+				background-size: 36px;
+			}
+			.container .user_info input[name=uname]{
+				width: 364px;
+				height: 34px;
+				border: 0;
+				margin-left:36px;
+			}
+            .container .user_info .user_email{
+                background: url(images/email.jpg) no-repeat left center;
+                background-size: 36px;
+            }
+            .container .user_info .user_email input[name=uemail]{
+                width: 364px;
+                height: 34px;
+                border: 0;
+                margin-left:36px;
+            }
+
+            .container .user_info .user_pw,.container .user_info .re_pw{
+                background: url(images/pwd.jpg) no-repeat left center;
+                background-size: 36px;
+            }
+            .container .user_info .user_pw input[name=upw]{
+                width: 364px;
+                height: 34px;
+                border: 0;
+                margin-left:36px;
+            }
+            .container .user_info .re_pw input[name=repw]{
+                width: 364px;
+                height: 34px;
+                border: 0;
+                margin-left:36px;
+            }
+            .container .user_info .user_reg input[name=login]{
+                width:400px;
+                height: 36px;
+                background: #29D729;
+            }
+        </style>
+    </head>
+    <body>
+    	<div class="container">
+    		<!-- 头像 -->
+    		<div class="user_pic">
+    			<img class="photo" src="images/touxiang.jpg" alt="威锋">
+    		</div>
+    		<div class="user_info">
+    			<!-- 用户名 -->
+    			<div class="u_info user_name">
+    				<input type="text" name="uname" placeholder="用户名">
+    			</div>
+    			<!-- 密码 -->
+    			<div class="u_info user_pw">
+    				<input type="password" name="upw" placeholder="密码">
+    			</div>
+
+                <div class="u_info re_pw">
+                    <input type="password" name="repw" placeholder="再次输入密码">
+                </div>
+    			<!-- 信息提交 -->
+    			<div class="user_reg">
+    				<input type="submit" name="login" value="登录">
+    			</div>
+    		</div>
+    	</div>
+    </body>
+</html>

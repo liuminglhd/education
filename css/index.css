@@ -1,0 +1,910 @@
+/*
+* @Author: 刘海涛
+* @Date:   2017-04-28 22:46:33
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-05-04 20:14:56
+*/
+/* 初始化设置 */
+*{
+	margin:0;
+	padding:0;
+}
+/* 公用样式 */
+#body{
+	font:14px "微软雅黑";
+}
+.overflowH{
+	overflow:hidden;
+}
+.container{
+	width:1000px;
+	margin:0 auto;
+}
+#body a{
+	text-decoration:none;
+}
+ul{
+	list-style: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+/* ----------------------header-------------------------- */
+/* top黑色头部 */
+.header .top{
+	background: #353535;
+}
+.header .top .container{
+	height: 36px;
+	line-height: 36px;
+	color:#FFF;
+}
+.header .top .container .left{
+	float: left;
+	background: url(../img/sun.gif) no-repeat left center;
+	text-indent: 1.5em;
+}
+.header .top .container .left span{
+	display: inline-block;
+}
+.header .top .container .left a{
+	color:#FFF;
+	margin-left:5px;
+}
+.header .top .container .right div{
+	float: left;
+	height:36px;
+	line-height: 36px;
+}
+.header .top .container .right div img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 4px;
+}
+.header .top .container .right div a{
+	display: inline-block;
+	margin:0 5px 0 5px;
+	color: #FFF;
+}
+/* 头部center */
+.center .container{
+	height:116px;
+}
+.center .container .left img{
+	margin-top:10px;
+}
+.center .container .right{
+	margin-top: 50px;
+}
+.center .container .right>*{
+	height:42px;
+}
+.center .container .right select,.center .container .right input{
+	float: left;
+	height: 40px;
+	text-indent: 1em;
+	border: 1px solid #C7C7C7;
+	border-left:0;
+	outline: none;
+}
+.center .container .right select[name=inside]{
+	width: 110px;
+	height:42px;
+	border-left:1px solid #C7C7C7;
+}
+
+.center .container .right input[name=keywords]{
+	width: 237px;
+}
+.center .container .right input[name=search]{
+	width: 40px;
+}
+/* 头部导航 */
+.nav{
+	background: #087A22;
+}
+.nav .container a{
+	display: inline-block;
+	height: 42px;
+	line-height: 42px;
+	width:120px;
+	color:#FFF;
+	font-size:16px;
+	font-weight: bold;
+	margin-left:15px;
+}
+/* ----------------------------主体main------------------------------------ */
+/* 公共title样式 */
+p.title span{
+	background: url(../img/1.1.1.gif) no-repeat left center;
+	font-size:18px;
+	height: 20px;
+	line-height: 20px;
+	color:#087826;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	padding-left:15px;
+}
+p.title a{
+	float: right;
+	color: #2179c3;
+}
+.main>.left,.main>.right{
+	margin-top:10px;
+}
+/* ------------------左侧----------------- */
+/* 左侧公告 */
+.main .left .info{
+	position: relative;
+}
+.main .left .info span{
+	display: inline-block;
+	background: url(../img/1.1_20.png) no-repeat left center;
+	padding-left: 30px;
+	font-weight: bold;
+}
+.main .left .info span a{
+	color:#8d8d8d;
+	font-weight: normal;
+	margin-left:8px;
+}
+.main .left .info .img_box{
+	margin-top: 5px;
+	width: 717px;
+}
+.main .left .info .img_box .img_group{	
+	width:2151px;
+	height:301px;
+}
+.main .left .info .img_box .img_group img{
+	float: left;
+}
+.main .left .info ul{
+	position: absolute;
+	left: 50%;
+	margin-left:-40px;
+	bottom: 5px;
+}
+.main .left .info ul li{
+	float: left;
+	margin-left:6px;
+	width:20px;
+	height:20px;
+	background: url(../img/ol_05.png) no-repeat 100%;
+}
+.main .left .info ul li.current{
+	background: url(../img/ol_03.png) no-repeat 100%;
+}
+/* 左侧信息分享 */
+.main .left .share{
+	margin-top: 25px;
+}
+.main .left .share table td{
+	width:330px;
+	height:86px;
+	background: url(../img/1.1_44.png) no-repeat right center;
+}
+.main .left .share table td:nth-child(even){
+	padding-left:50px;
+}
+.main .left .share table td a{
+	color:#000;
+	font-weight: bold;
+	font-size:16px;
+}
+.main .left .share table td p{
+	color:#8d8d8d;
+}
+/* 左侧快捷查询 */
+.main .left .quick_search{
+	margin-top: 25px;
+}
+.main .left .quick_search table td{
+	border-bottom: 1px solid #ececec;
+}
+.main .left .quick_search table td:nth-child(odd){
+	width:115px;
+	font-size:16px;
+	font-weight: bold;
+}
+.main .left .quick_search table td a{
+	color:#797979;
+	display: inline-block;
+	padding:3px;
+}
+/* ------------------右侧----------------- */
+/* 右侧下载download */
+.main .right .download{
+	width:262px;
+}
+.main .right .download a{
+	display: left;
+	width:125px;
+	height:105px;	
+}
+.main .right .download a:nth-child(even){
+	margin-left:6px;
+}
+.main .right .download a img{
+	margin-top:3px;
+}
+/* 右侧报考信息 */
+.main .right .exam_info{
+	width:264px;
+	margin-top: 20px;
+	position: relative;
+}
+.main .right .exam_info .details_box{
+	width:264px;
+}
+.main .right .exam_info .details ul li{
+	height:80px;
+	line-height: 80px;
+	border-bottom:1px solid #e3e3e3;
+}
+.main .right .exam_info .details ul li:last-child{
+	border-bottom: none;
+}
+.main .right .exam_info .details ul li span{
+	display: inline-block;
+	width:31px;
+	height:31px;
+	text-align: center;
+	line-height: 31px;
+	font-size:20px;
+	font-family: "微软雅黑";
+	font-style: italic;
+	color:#FFF;
+	background: url(../img/11_41.png) no-repeat left center;
+}
+.main .right .exam_info .details ul li a{
+	color: #000;
+	font-size:16px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+.main .right .exam_info .details ul li p{
+	margin: -60px 0 0 35px;
+	color:#9f9f9f;
+	font-size:12px;
+	font-family: "黑体";
+}
+.main .right .exam_info .exam_points{
+	position: absolute;
+	left:50%;
+	bottom:-20px;
+	margin-left:-60px;
+}
+.main .right .exam_info .exam_points li{
+	float: left;
+	width:10px;
+	height:10px;
+	margin-left:15px;
+	background: url(../img/1.1_51.png) no-repeat left center;
+}
+.main .right .exam_info .exam_points li.current{
+	background: url(../img/1.1_49.png) no-repeat left center;
+}
+/* 高考进行时 */
+.main .right .timing{
+	margin-top:40px;
+}
+/* 读书教育信息下载 */
+.main .right .bookdown{
+	margin-top:20px;
+	width: 262px;
+	border: 1px solid #ebebeb;
+}
+.main .right .bookdown ul{
+	padding:0 5px 0 10px;
+}
+.main .right .bookdown ul li{
+	height:54px;
+	line-height: 54px;
+	border-bottom: 1px solid #ececec;
+}
+.main .right .bookdown ul li:last-child{
+	border-bottom: none;
+}
+.main .right .bookdown ul li a img{
+	margin-top:14px;
+}
+/* ------------------------------中间部分广告---------------------------------------------- */
+.adver{
+	margin-top:40px;
+}
+/* ------------------------------学生跳蚤flea---------------------------------------------- */
+.stu_flea{
+	margin-top: 25px;
+}
+.stu_flea p font{
+	color:#000;
+	font-size:14px;
+	float: right;
+}
+.stu_flea .classify{
+	margin-top:50px;
+}
+.stu_flea .classify>div{
+	width: 249px;
+	height: 110px;
+	padding:5px 0;
+	border-right:1px solid #e4e4e4;
+	float:left;
+}
+.stu_flea .classify>div:last-child{
+	border-right: none;
+}
+.stu_flea .classify .left{
+	margin-left:20px;
+}
+.stu_flea .classify .right{
+	width:160px;
+	margin-right:20px;
+}
+.stu_flea .classify .right span{
+	font-size:20px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+.stu_flea .classify .right p{
+	color:#959595;
+	font-size: 13px;
+}
+.stu_flea .classify a{
+	display: block;
+	color:#3f7aa4;
+	margin:15px 0 0 180px;
+}
+/* -------------------------------新浪微博互粉好友和资料推荐-------------------------------------- */
+/* 新浪微博互粉好友 */
+.f_dat{
+	margin-top:30px;
+}
+.fans{
+	width:725px;
+	height:148px;
+	border-bottom: 1px solid #dfdfdf;
+}
+.fans .pic_group{
+	margin-top:30px;
+}
+.fans .pic_group .pic{
+	height:60px;
+	float: left;
+	margin-right:9.2px;
+}
+.fans .pic_group .pic img{
+	display: block;
+	width:51px;
+	height: 48px;
+}
+.fans .pic_group .pic a{
+	display: block;
+	font-size:12px;
+	color:#565656;
+	width:48px;
+	margin:2px 0 0 3px;
+	word-break:keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+}
+/* 资料推荐 */
+.datum{
+	width:262px;
+	height:152px;
+}
+/* ---------------------------------招聘兼职----------------------------------------- */
+.employ{
+	margin-top:30px;
+}
+.employ>div{
+	width:498px;
+}
+.employ div.left{
+	border-right:1px solid #e4e4e4;
+}
+.employ>div>a{
+	display: block;
+	float: left;
+	width:90px;
+	height:36px;
+	line-height: 36px;
+	color:#575556;
+	font-weight: bold;
+	font-size:16px;
+	text-align: center;
+	margin-left: 15px;
+}
+.employ>div>a.current{
+	border:1px solid #e6e6e6;
+	border-top:3px solid #6cb48c;
+	border-bottom:2px solid #FFF;
+}
+.employ div ul{
+	border-top:1px solid #e7e7e7;
+	margin-top: 40px;
+}
+.employ div.left ul{
+	margin-right:20px;
+}
+.employ div.right ul li{
+	padding-left:20px;
+}
+.employ div ul li{
+	list-style: inside;
+	color: #dfdfdf;
+	height:33px;
+	line-height: 33px;
+}
+.employ div.left ul li span,.employ div.right ul li span.date{
+	float:right;
+	color:#999999;
+	font-size:11px;
+	font-weight: bold;
+}
+.employ div ul li span{
+	color:#F00;
+}
+.employ div ul li a{
+	color:#565656;
+}
+/* 酷房网广告 */
+.adver_2{
+	margin-top:20px;
+}
+/* -----------------------------------房屋租赁信息和省内大学------------------------------------------- */
+/* ------------房屋租赁信息------------------ */
+.house_cont:after{
+	content:"";
+	width:100%;
+	clear:both;
+}
+.house_cont{
+	position: relative;
+}
+.house{
+	margin-top: 30px;
+}
+.house .left{
+	width:720px;
+}
+.house .left .details{
+	margin-top:40px;
+}
+.house .left .details>div{
+	height:75px;
+	padding:15px 0;
+	border-bottom: 1px solid #e4e4e4;
+	overflow: hidden;
+}
+.house .left .details>div:last-child{
+	border-bottom: none;
+}
+.house .left .details>div div{
+	float:left;
+}
+.house .left .details>div>div:nth-child(2){
+	width:375px;
+	margin-left: 10px;
+}.house .left .details>div>div:nth-child(2) a{
+	color:#000;
+	font-weight: bold;
+	font-size: 14px;
+}
+.house .left .details>div>div:nth-child(2) a span{
+	font-weight: normal;
+}
+.house .left .details>div>div:nth-child(2) a span:first-child{
+	color:#F00;
+}
+.house .left .details>div>div:nth-child(2) a span:last-child{
+	color:#0B773B;
+	font-size: 12px;
+}
+.house .left .details>div>div:nth-child(2)>span{
+	display: block;
+	color: #9F9F9F;
+	font-size:12px;
+	padding:6px 0 0 0;
+}
+.house .left .details>div>div:nth-child(3) span{
+	display: block;
+	font-size:12px;
+	color:#656565;
+	margin: 10px 0 0 50px;
+}
+.house .left .details>div>div:nth-child(3) span font{
+	color:#F00;
+	font-size: 14px;
+	font-weight: bold;
+}
+.house .left .details>div>div:nth-child(4){
+	float: right;
+	color:#606060; 
+	font-size: 13px;
+	margin:30px 10px 0 0;
+}
+/* ----------------省内大学-------------------- */
+.house .right{
+	width:260px;
+}
+.house .right table.university  td{
+	width:130px;
+	height:48px;
+	text-align: center;
+	border-bottom: 1px solid #e4e4e4;
+}
+.house .right table.university td a{
+	color: #252525;
+}
+/* --------------小工具-------------------- */
+.house .right table.tools{
+	width:260px;
+	margin-top: 10px;
+	border:1px solid #e3e3e3;
+	border-radius:3px;
+}
+.house .right table.tools td{
+	background: url(../img/1.1_44.png) no-repeat 230px center;
+	padding-left: 10px;
+	height:45px;
+	line-height: 45px;
+	border-bottom: 1px solid #e3e3e3;
+}
+.house .right table.tools td img{
+	vertical-align: middle;
+	margin-right:5px;
+}
+/* 小工具的使用 */
+.house_cont .tools_box{
+	position: absolute;
+	right:10%;
+	bottom:2%;
+	width:240px;
+	height: 275px;
+	padding: 10px 0 0 16px;
+	border:1px solid #e3e3e3;
+	display: none;
+}
+.house_cont .tools_box>div{
+	margin:0 auto;
+	display: none;
+}
+/* .house_cont .tools_box div.current{
+	display: block;
+} */
+/* 手机号码phone */
+.house_cont .tools_box .phone input[name=number]{
+	width: 170px;
+	height: 20px;
+	line-height: 20px;
+}
+.house_cont .tools_box .phone input[type=submit]{
+	width: 45px;
+}
+.house_cont .tools_box .phone .phonenum{
+	padding: 10px 3px;
+}
+.house_cont .tools_box .phone .phonenum span{
+	display: block;
+	float: left;
+	margin:1px;
+	font-size: 30px;
+	font-weight: bold;
+	width:68px;
+	height:56px;
+	line-height: 60px;
+	text-align: center;
+	border: 1px solid #e3e3e3; 
+	border-radius: 3px;
+}
+/* 计算器calculator */
+.house_cont .tools_box .calcu input[name=calcu]{
+	width: 170px;
+	height: 20px;
+	line-height: 20px;
+}
+.house_cont .tools_box .calcu input[type=submit]{
+	width: 45px;
+}
+.house_cont .tools_box .calcu .calcunum{
+	padding: 10px 3px;
+}
+.house_cont .tools_box .calcu .calcunum span{
+	display: block;
+	float: left;
+	margin:1px;
+	font-size: 30px;
+	font-weight: bold;
+	width:51px;
+	height:44px;
+	line-height: 45px;
+	text-align: center;
+	border: 1px solid #e3e3e3; 
+	border-radius: 3px;
+}
+.house_cont .tools_box .calcu .calcunum span:nth-last-child(3){
+	width:106px;
+}
+/* 万年历calen */
+.house_cont .tools_box .cale input[name=cale]{
+	width: 170px;
+	height: 20px;
+	line-height: 20px;
+}
+.house_cont .tools_box .cale input[type=submit]{
+	width: 45px;
+}
+.house_cont .tools_box .cale .calenum{
+	padding: 10px 3px;
+}
+.house_cont .tools_box .cale .calenum span{
+	display: block;
+	float: left;
+	margin:1px;
+	font-size: 30px;
+	font-weight: bold;
+	width:68px;
+	height:56px;
+	line-height: 56px;
+	text-align: center;
+	border: 1px solid #e3e3e3; 
+	border-radius: 3px;
+}
+/* 快递查询express */
+.house_cont .tools_box .expr input[name=expr]{
+	width: 170px;
+	height: 20px;
+	line-height: 20px;
+}
+.house_cont .tools_box .expr input[type=submit]{
+	width: 45px;
+}
+.house_cont .tools_box .expr .exprnum{
+	padding: 10px 3px;
+}
+.house_cont .tools_box .expr .exprnum span{
+	display: block;
+	float: left;
+	margin:5px 2px;
+	font-size: 25px;
+	color: #4600DA;
+	font-weight: bold;
+	width:68px;
+	height:56px;
+	line-height: 56px;
+	text-align: center;
+	border: 1px solid #e3e3e3; 
+	border-radius: 3px;
+}
+/* 天气预报weather forecast */
+.house_cont .tools_box .weather .weathernum{
+	padding: 10px 3px;
+}
+.house_cont .tools_box .weather .weathernum span{
+	display: block;
+	float: left;
+	margin:5px 2px;
+	font-size: 25px;
+	color: #4600DA;
+	font-weight: bold;
+	width:200px;
+	height:56px;
+	line-height: 56px;
+	text-align: center;
+	border: 1px solid #e3e3e3; 
+	border-radius: 3px;
+}
+/* 列车时刻表train */
+.house_cont .tools_box .train input[name=train]{
+	width: 170px;
+	height: 20px;
+	line-height: 20px;
+}
+.house_cont .tools_box .train input[type=submit]{
+	width: 45px;
+}
+.house_cont .tools_box .train .trainnum{
+	padding: 10px 3px;
+}
+.house_cont .tools_box .train .trainnum span{
+	display: block;
+	float: left;
+	margin:1px;
+	font-size: 24px;
+	font-weight: bold;
+	width:68px;
+	height:54px;
+	line-height: 56px;
+	text-align: center;
+	border: 1px solid #e3e3e3; 
+	border-radius: 3px;
+}
+.house_cont .tools_box .train .trainnum span:last-child{
+	width: 212px;
+}
+/* --------------------------------职称广告---------------------------------------------- */
+.adver_3{
+	height:102px;
+	margin-top: 20px;
+}
+/* --------------------------------教育百科-------------------------------------------- */
+.edu_ency{
+	margin-top: 20px;
+}
+.edu_ency p span,.edu_ency p a{
+	float: left;
+}
+.edu_ency p a{
+	color:#565455;
+}
+.edu_ency p span{
+	margin-right: 170px;
+}
+.edu_ency p a{
+	display: inline-block;
+	margin-left: 27px;
+}
+.edu_ency .ency_det{
+	margin-top:16px;
+	border-top: 3px solid #E6E6E6;
+	padding-top:20px;
+}
+.edu_ency .ency_det div{
+	float:left;
+}
+.edu_ency .ency_det div.news ul{
+	width:300px;
+	margin-left:30px;
+}
+.edu_ency .ency_det div.news ul li{
+	list-style:disc inside;
+	color:#c9c9c9;
+	height:36px;
+	line-height: 36px;
+}
+.edu_ency .ency_det div.news ul li a{
+	color:#5b595a;
+}
+/* -------------------------------校园周边------------------------------------------- */
+.surr_sina{
+	margin-top:15px;
+}
+.surr ul{
+	width:630px;
+	margin-top:15px;
+	border-top:3px solid #e4e4e4;
+}
+.surr ul li{
+	list-style: disc inside;
+	color: #5d5d5d;
+	font-size:10px;
+	float: left;
+	height:56px;
+	line-height: 56px;
+	border-bottom: 1px solid #e4e4e4;
+}
+.surr ul li:nth-child(odd){
+	padding-left:30px;
+	width:335px;
+}
+.surr ul li:nth-child(even){
+	width:265px;
+}
+.surr ul li a{
+	font-size:12px;
+	color: #5d5d5d;
+}
+/* -------------------------------新浪微博-------------------------------------------- */
+.sina{
+	margin:0 0 0 10px;
+	width:350px;
+}
+.sina .link_info{
+	border-top:3px solid #e4e4e4;
+	margin-top:15px;
+}
+.sina .link_info>div{
+	border-bottom: 1px solid #e4e4e4;
+}
+.sina .link_info>div:last-child{
+	border-bottom: none;
+}
+.sina .link_info .link1{
+	height:90px;
+	padding:10px 0 0 10px;
+}
+.sina .link_info .link1>div{
+	float: left;
+}
+.sina .link_info .link1 .left1 img{
+	margin-top: 15px;
+}
+.sina .link_info .link1 .left2{
+	margin: 10px 0 0 10px;
+}
+.sina .link_info .link1 .left2 span:first-child{
+	display: inline-block;
+	padding-right:20px;
+	color:#0e6d7f;
+	font-size: 14px;
+	background: url(../img/1.1_164.png) no-repeat right center;
+}
+.sina .link_info .link1 .left2 span:nth-child(2){
+	color:#9a9a98;
+	font-size:10px;
+}
+.sina .link_info .link1 .left2 span:last-child{
+	display: block;
+	margin-top: 10px;
+}
+.sina .link_info .link2{
+	padding: 10px 0 0 10px;
+	height:170px;
+}
+.sina .link_info .link2>span{
+	display: block;
+	margin:5px;
+}
+.sina .link_info .link2 a{
+	color: #2f8cc5;
+}
+.sina .link_info .link2>span:last-child{
+	margin-top: 16px;
+	color:#a9b4b6;
+} 
+.sina .link_info .link2>span:last-child a{
+	color:#a9b4b6;
+}
+.sina .link_info .link3{
+	padding: 10px 0 0 10px;
+	height:120px;
+}
+.sina .link_info .link3 p{
+	border: 1px solid #e4e4e4;
+	margin-top: 20px;
+	padding: 10px 5px 0 5px;
+	line-height: 20px;
+	color: #5c5c5c;
+	font-size: 12px;
+}
+.sina .link_info .link3 p a{
+	color: #0e6d7f;
+	font-size: 12px;
+}
+/* -----------------------------------友情链接---------------------------------------------- */
+.friendly_link .fre_link a{
+	color: #9f9f9f;
+	margin: 0 6px 4px 6px;
+}
+.friendly_link .fre_link a img{
+	margin: 20px 2px;
+}
+/* ----------------------------------底部footer------------------------------------------- */
+.footer{
+	background: #353535;
+	padding:30px 0;
+	height: 120px;
+	margin-top: 10px;
+}
+.footer div{
+	color:#afafaf;
+	font-size: 12px;
+	line-height: 24px;
+}
+.footer .up a{
+	color:#afafaf;
+	font-size: 12px;
+	display: inline-block;
+	margin: 0 10px;
+}
+.footer .right a{
+	margin:50px 0 0 0;
+}
+.footer .right{
+	margin-top: 40px;
+}
